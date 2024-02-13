@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #8EB2D9;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(207, 224, 231);
+    width: 40rem;
+    height: 32rem;
+    border-radius: 20px;
+    padding: 15px 30px;
+    border: 1px solid #6a92bd;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.096);
+    gap: 20px;
+}
+
+h1{
+    text-align: center;
+    color: #00254E;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+input {
+    height: 2.3em;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #565651;
+    padding: 5px;
+}
+
+.input-container label {
+    padding: 0 2px;
+    color: #00254E;
+    font-weight: 600;
+}
+
+.input-container span {
+    font-size: 13px;
+    padding: 0 5px;
+    color: red;
+    font-weight: 350;
+    display: none;
+}
+
+button {
+    width: 15em;
+    height: 2.5em;
+    align-self: center;
+    background-color: #00254E;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #001833;
+    border-radius: 7px;
+    margin-top: 5em;
+    box-shadow: 0px 0px 10px 3px #00244e63;
+    transition: 0.2s;
+}
+
+button:hover {
+    box-shadow: none;
+    cursor: pointer;
+    background-color: white;
+    color: #00254E;
+    transition: 0.2s;
+}
+
+#registration-alert {
+    align-self: center;
+    color: #00254E;
+    display: none;
+}
+
+@media (max-width: 640px) {
+    main {
+        width: 400px;
+        padding: 10px;
+    }
+}
